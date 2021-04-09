@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #EBECED;
+  width: 697px;
+  height: 447px;
+  border-radius: 10px;
+  padding-top: 80px;
+  position: relative;
+  text-align: center;
+}
+.card svg {
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.card svg:hover path {
+  stroke: red;
+}
+.card h2:nth-of-type(1) {
+  font-size: 26px;
+  font-weight: 800;
+  color: #262D2C;
+  margin-bottom: 10px;
+}
+.card p {
+  width: 381px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  color: #262D2C;
+  line-height: 22px;
+  margin-bottom: 54px;
+}
+.card .btn {
+  margin-bottom: 35px;
+  width: 419px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.card .btn a {
+  width: 135px;
+  height: 42px;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .btn a:hover {
+  opacity: 0.85;
+}
+.card .btn a img {
+  margin-right: 15px;
+}
+.card .btn a:not(:nth-of-type(3)) {
+  margin-right: 15px;
+}
+.card .btn a:nth-of-type(1) {
+  background-color: #405896;
+}
+.card .btn a:nth-of-type(2) {
+  background-color: #1DA1F2;
+}
+.card .btn a:nth-of-type(3) {
+  background-color: #000000;
+}
+.card h2:nth-of-type(2) {
+  font-size: 20px;
+  color: #262D2C;
+  margin-bottom: 53px;
+}
+.card h2:nth-of-type(2) span {
+  font-weight: 400;
+  font-style: normal;
+}
+.card a {
+  color: #D66A3A;
+}
+
+@media screen and (max-width: 610px) {
+  .card {
+    width: 80%;
+    height: 500px;
+  }
+  .card h2 + p {
+    width: 90%;
+  }
+  .card p {
+    margin-bottom: 15px;
+  }
+  .card .btn {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card .btn a:not(:nth-of-type(3)) {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
