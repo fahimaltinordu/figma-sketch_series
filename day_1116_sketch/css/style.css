@@ -1,0 +1,196 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.flexcol, body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flexrow, .card a, .card, .checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #191B1D;
+  height: 100vh;
+}
+
+.kutu {
+  width: 418px;
+  height: 108px;
+  background-color: #BC1E4A;
+  text-align: center;
+  line-height: 54px;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 139px;
+}
+.kutu p {
+  font-size: 16px;
+}
+.kutu h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.checkbox {
+  margin-bottom: 40px;
+}
+.checkbox p {
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.checkbox span {
+  font-size: 16px;
+  color: white;
+}
+.checkbox span:nth-of-type(1) {
+  margin-right: 10px;
+}
+.checkbox span:nth-of-type(2) {
+  margin-left: 10px;
+}
+.checkbox input {
+  display: none;
+}
+.checkbox label {
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+  background-color: #BC1E4A;
+  border-radius: 32px;
+  position: relative;
+}
+.checkbox label::before {
+  content: "";
+  background-color: #fff;
+  width: 23.42px;
+  height: 23.07px;
+  display: block;
+  position: absolute;
+  right: 4.7px;
+  top: 4.7px;
+  border-radius: 50%;
+}
+.card {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card-kutu {
+  width: 375px;
+  height: 617px;
+  background-color: #22262C;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 50px;
+}
+.card h3 {
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 18px;
+  margin-top: 37px;
+}
+.card h1 {
+  font-size: 56px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 66px;
+}
+.card h1 span {
+  font-size: 22px;
+}
+.card ul {
+  width: 215px;
+  margin-left: 70px;
+  margin-bottom: 48px;
+}
+.card ul li {
+  line-height: 40px;
+}
+.card ul li::before {
+  content: "•";
+  color: #BC1E4A;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.card a {
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  border: 1px solid #BC1E4A;
+  width: 243px;
+  height: 54px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.card a:hover {
+  background-color: #BC1E4A;
+}
+
+.card-kutu:nth-of-type(2) ul {
+  width: 299px;
+}
+.card-kutu:nth-of-type(2) ul li {
+  margin-left: -1rem;
+}
+.card-kutu:nth-of-type(2) a {
+  background-color: #BC1E4A;
+}
+.card-kutu:nth-of-type(2) h1 {
+  margin-bottom: 0;
+}
+.card-kutu:nth-of-type(2) select {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  width: 297px;
+  height: 68px;
+  background-color: transparent;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-left: 40px;
+}
+.card-kutu:nth-of-type(2) select option {
+  color: white;
+}
+.card-kutu:nth-of-type(2) p {
+  font-size: 14px;
+  color: #BC1E4A;
+  margin-bottom: 31px;
+  position: relative;
+  left: 60px;
+}
+.card-kutu:nth-of-type(3) h1 {
+  font-size: 36px;
+  margin-bottom: 111px;
+  margin-top: 40px;
+}
+.card-kutu:nth-of-type(3) ul {
+  width: 254px;
+}
+
+/*# sourceMappingURL=style.css.map */
