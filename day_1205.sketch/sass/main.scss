@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Mulish', sans-serif;
+}
+body {
+    background-color: lightgray;
+    padding:100px;
+}
+.kutu {
+    width:446px;
+    height:512px;
+    background-color: #fff;
+    border-radius:5px;
+    margin-bottom:50px;
+    &-header {
+        width:100%;
+        height:197px;
+        img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+    }
+    &-image {
+        position: relative;
+        img {
+            position: absolute;
+            top:-83px;
+            left:50%;
+            transform:translateX(-50%);
+        }
+    }
+    &-content {
+        text-align:center;
+        margin-top:90px;
+        h3 {
+            margin-bottom:12px;
+            font-weight: 700;
+            font-size: 22px;
+            color: #101129;
+        }
+        p {
+            width:90%;
+            margin-left:auto;
+            margin-right:auto;
+            margin-bottom:35px;
+            color: #101129;
+            font-size: 18px;
+        }
+        a {
+            text-transform: uppercase;
+            margin-left:auto;
+            margin-right:auto;
+            width:150px;
+            height:50px;
+            color:white;
+            text-decoration: none;
+            background-color: #141F64;
+            border:1px solid #141F64;
+            @extend .flexbutton;
+            transition: background-color 0.5s, color 0.5s;
+            &:hover {
+                background-color: #fff;
+                color:#141F64;
+            }
+        }
+    }
+}
+.flexbutton {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:3px;
+    font-weight: 700;
+    letter-spacing: 1.6;
+}
+.kutu2 {
+    background-color: #fff;
+    width:641px;
+    height:281px;
+    border-radius: 6px;
+    display:flex;
+    align-items: center;
+    margin-bottom:50px;
+    &-image {
+        margin-left:60px;
+        margin-right:40px;
+    }
+    &-content {
+        h3 {
+            margin-bottom:10px;
+            font-weight: 700;
+            font-size: 26px;
+            color: #101129;
+        }
+        p {
+            width:80%;
+            margin-bottom:25px;
+            color: #101129;
+            font-size: 18px;
+        }
+        a {
+            text-transform: uppercase;
+            width:150px;
+            height:50px;
+            color:#141F64;
+            text-decoration: none;
+            background-color: #ffffff;
+            border:1px solid #141F64;
+            transition: background-color 0.5s, color 0.5s;
+            @extend .flexbutton;
+            &:hover {
+                background-color: #141F64;
+                color:#fff;
+            }
+        }
+    }
+
+}
+.kutu3 {
+    width:771px;
+    height:226px;
+    background-color: #fff;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    position:relative;
+    &-image {
+        margin-left:50px;
+        margin-right:45px;
+    }
+    &-content {
+        margin-right:94px;
+        h3 {
+            font-size: 26px;
+            font-weight: 700px;
+            margin-bottom:25px;
+        }
+        p {
+            display:flex;
+            align-items: center;
+            span {
+                font-size: 16px;
+                color: #101129;
+                margin-left:5px;
+                &:nth-of-type(1) {
+                    margin-right:20px;
+                }
+            }
+        }
+    }
+    a {
+        position:absolute;
+        top:38px;
+        right:30px;
+        text-transform: uppercase;
+        margin-left:auto;
+        margin-right:auto;
+        width:200px;
+        height:50px;
+        color:white;
+        text-decoration: none;
+        background-color: #141F64;
+        border:1px solid #141F64;
+        @extend .flexbutton;
+        transition: background-color 0.5s, color 0.5s;
+        &:hover {
+            background-color: #fff;
+            color:#141F64;
+        }
+    }
+}
