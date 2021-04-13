@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Merriweather:wght@700&display=swap');
+ * {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+   //  font-family: 'Merriweather', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+ }
+ body {
+    background-image: url(https://www.onlygfx.com/wp-content/uploads/2017/03/blue-burst-abstract-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+   //  height:100vh;
+    padding-top:50px;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+ }
+
+ $fontcolor: #2B2862;
+ $fontsize: 15px;
+
+ .card {
+    background-color: rgba(255, 255, 255, 0.75);
+    width:80%;
+   //  height: 90%;
+    padding:20px 20px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    backdrop-filter: blur(9px);
+   &-head {
+
+      nav {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         ul {
+            display:flex;
+            align-items: center;
+
+            li {
+               &:not(:nth-of-type(6)) {
+                  margin-right:20px;
+               }
+               a {
+                  color:$fontcolor;
+                  font-size: $fontsize;
+               }
+               &:nth-of-type(6) {
+                  a {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background-color: $fontcolor;
+                  color: white;
+                  padding:14px 23px;
+                  border-radius:5px;
+                  }
+               }
+               
+            }
+         }
+      }
+   }
+   &-main {
+      padding-left:120px;
+      max-width:60%;
+      margin-top:50px;
+      h1 {
+         font-size: 40px;
+         font-family: 'Merriweather', serif;
+         color: $fontcolor;
+         line-height: 63px;
+         margin-bottom:20px;
+      }
+      p {
+         font-size: 18px;
+         color: $fontcolor;
+         line-height: 23px;
+         margin-bottom:40px;
+      }
+   }
+   &-foot {
+      display:flex;
+      gap:10px;
+      justify-content: center;
+      .box {
+         width:25%;
+         // height:150px;
+         background-color: rgb(255, 255, 255);
+         border-radius: 5px;
+         padding:25px;
+         h3 {
+            font-family: 'Merriweather', serif;
+            color:$fontcolor;
+            font-size: 20px;
+            margin-bottom: 30px;
+         }
+         a {
+            color:#606DFE;
+         }
+         p {
+            font-size: $fontsize;
+            text-align: justify;
+         }
+         &:nth-of-type(1) {
+            a {
+               text-transform: uppercase;
+               &::after {
+                  content:'\25BC';
+                  margin-left:10px;
+               }
+            }
+         }
+         &:nth-of-type(3) {
+            a {
+               border: 1px solid #D4D7FF;
+               border-radius: 21px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height:45px;
+               width:80%;
+               margin-top:20px;
+            }
+         }
+      }
+   }
+ }
+ @media screen and (max-width:1000px) {
+    .card-foot {
+       flex-direction:column;
+       align-items: center;
+      .box {
+         width:80%;
+         &:nth-of-type(3) {
+            a {
+               width:50%;
+               
+            }
+         }
+      }
+    }
+    .card-main {
+       max-width:90%;
+       padding-left:80px;
+       padding-right:40px;
+    }
+ }
+ @media screen and (max-width:666px) {
+   .card-main {
+      max-width:100%;
+      padding-left:40px;
+      padding-right:40px;
+      h1 {
+         font-size: 25px;
+         line-height: 25px;
+      }
+   }
+   .card-head {
+      nav {
+         ul {
+            display:none;
+         }
+      }
+   }
+ }

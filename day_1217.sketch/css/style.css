@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Merriweather:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'IBM Plex Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  background-image: url(https://www.onlygfx.com/wp-content/uploads/2017/03/blue-burst-abstract-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+
+.card {
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 80%;
+  padding: 20px 20px;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px); }
+  .card-head nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .card-head nav ul {
+      display: flex;
+      align-items: center; }
+      .card-head nav ul li:not(:nth-of-type(6)) {
+        margin-right: 20px; }
+      .card-head nav ul li a {
+        color: #2B2862;
+        font-size: 15px; }
+      .card-head nav ul li:nth-of-type(6) a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #2B2862;
+        color: white;
+        padding: 14px 23px;
+        border-radius: 5px; }
+  .card-main {
+    padding-left: 120px;
+    max-width: 60%;
+    margin-top: 50px; }
+    .card-main h1 {
+      font-size: 40px;
+      font-family: 'Merriweather', serif;
+      color: #2B2862;
+      line-height: 63px;
+      margin-bottom: 20px; }
+    .card-main p {
+      font-size: 18px;
+      color: #2B2862;
+      line-height: 23px;
+      margin-bottom: 40px; }
+  .card-foot {
+    display: flex;
+    gap: 10px;
+    justify-content: center; }
+    .card-foot .box {
+      width: 25%;
+      background-color: white;
+      border-radius: 5px;
+      padding: 25px; }
+      .card-foot .box h3 {
+        font-family: 'Merriweather', serif;
+        color: #2B2862;
+        font-size: 20px;
+        margin-bottom: 30px; }
+      .card-foot .box a {
+        color: #606DFE; }
+      .card-foot .box p {
+        font-size: 15px;
+        text-align: justify; }
+      .card-foot .box:nth-of-type(1) a {
+        text-transform: uppercase; }
+        .card-foot .box:nth-of-type(1) a::after {
+          content: '\25BC';
+          margin-left: 10px; }
+      .card-foot .box:nth-of-type(3) a {
+        border: 1px solid #D4D7FF;
+        border-radius: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 45px;
+        width: 80%;
+        margin-top: 20px; }
+
+@media screen and (max-width: 1000px) {
+  .card-foot {
+    flex-direction: column;
+    align-items: center; }
+    .card-foot .box {
+      width: 80%; }
+      .card-foot .box:nth-of-type(3) a {
+        width: 50%; }
+  .card-main {
+    max-width: 90%;
+    padding-left: 80px;
+    padding-right: 40px; } }
+
+@media screen and (max-width: 666px) {
+  .card-main {
+    max-width: 100%;
+    padding-left: 40px;
+    padding-right: 40px; }
+    .card-main h1 {
+      font-size: 25px;
+      line-height: 25px; }
+  .card-head nav ul {
+    display: none; } }
