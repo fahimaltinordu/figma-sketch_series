@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+ * {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline:0;
+    border:none;
+    font-family: 'Mulish', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+ }
+ body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    user-select: none;
+    background: linear-gradient(to bottom, rgb(207, 206, 206), #201f20);
+ }
+ .card {
+    background-color: white;
+    height:630px;
+    width:424px;
+    border-radius:15px;
+    padding:40px;
+    position: relative;
+    >img {
+       position:absolute;
+       top:15px;
+       right:15px;
+       width:36px;
+       &:hover {
+          cursor:pointer;
+       }
+    }
+    h3 {
+       width:319px;
+       font-size: 26px;
+       color: #1E1832;
+       + p {
+          width:319px;
+          margin-top:10px;
+          margin-bottom:35px;
+          font-size:16px;
+          a {
+             color:#501FF3;
+          }
+       }
+    }
+    label {
+       font-weight: bold;
+       font-style: 15px;
+       margin-bottom:10px;
+       display:flex;
+    }
+    .labelarea {
+      width: 343px;
+      display: flex;
+      justify-content: flex-start;
+      gap:90px;
+      label {
+         @extend label;
+      }
+    }
+    .inputarea {
+       width: 343px;
+       display: flex;
+       margin-bottom:15px;
+      input[type=text] {
+         @extend .inputgenel;
+         width:50%;
+         &:first-child {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+         }
+         &:last-child {
+            border-left:0;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+         }
+         &::placeholder {
+           @extend .placeholder;
+         }
+      }
+    }
+    input[type=email] {
+      @extend .inputgenel;
+      width:100%;
+      margin-bottom:30px;
+       &::placeholder {
+          @extend .placeholder;
+       }
+      + p {
+         width:319px;
+         font-size: 15px;
+         line-height: 20px;
+         margin-bottom:25px;
+         a{
+            color:#501FF3;
+            text-decoration:underline;
+         }
+         + a {
+            width:343px;
+            height:60px;
+            color:white;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: #BA54EF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius:5px;
+            &:hover {
+               background-color:rgba(185, 84, 239, 0.747);
+            }
+            +p {
+               text-align:center;
+               margin-top:10px;
+               margin-bottom:15px;
+               font-size: 14px;
+            }
+         }
+      }
+   }
+   .btn {
+      display:flex;
+      justify-content: space-between;
+      gap:15px;
+      a {
+         display: flex;
+         align-items: center;
+         justify-content: center;height:60px;
+         width:50%;
+         border-radius:5px;
+         &:nth-of-type(1) {
+            background-color:#657EF0;
+            &:hover {
+               background-color: rgba(106, 130, 236, 0.855);
+            }
+         }
+         &:nth-of-type(2) {
+            background-color:#65B2F0;
+            &:hover {
+               background-color: rgba(101, 177, 240, 0.801);
+            }
+         }
+      }
+      
+   }
+ }
+ .placeholder {
+   color: #1E1832;
+   font-size:18px;
+   opacity:0.6;
+ }
+ .inputgenel {
+   border:1px solid #DBDEEF;
+   border-radius:4px;
+   height:50px;
+   padding:24px 20px;
+ }
