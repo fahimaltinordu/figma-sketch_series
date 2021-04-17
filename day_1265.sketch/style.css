@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline:0;
+}
+html {
+    height:100%;
+}
+body {
+    background-color:lightgray;
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height:100%; */
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.card {
+    width:567px;
+    border-radius:15px;
+    background-color: #F2F2F2;
+    padding:80px;
+    position:relative;
+    /* overflow:auto;
+    max-height: 90%; */
+    display:none;
+}
+.card > img {
+    position:absolute;
+    width:48px;
+    top:25px;
+    right:25px;
+}
+.card > img:hover {
+    cursor: pointer;
+}
+.card h3 {
+    font-weight: bold;
+    font-size: 22px;
+}
+.card p {
+    font-size: 18px;
+    width:300px;
+    margin-top:10px;
+    margin-bottom:34px;
+}
+.card .icons {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    left:-10px;
+    margin-bottom:40px;
+}
+.card .icons label input {
+    display:none;
+}
+
+
+
+.card .icons span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:76px;
+    height:76px;
+    background-color: transparent;
+    border-radius:50%;
+}
+.card .icons label {
+    cursor:pointer;
+}
+.card .icons label input:checked + span {
+    background-color: lightgray;
+}
+.card .icons label:nth-of-type(1) input:checked + span svg{
+    fill:rgb(252, 47, 47);
+}
+.card .icons label:nth-of-type(2) :checked + span svg{
+    fill:rgb(245, 141, 22);
+}
+.card .icons label:nth-of-type(3) :checked + span svg{
+    fill:#FFBA44;
+}
+.card .icons label:nth-of-type(4) :checked + span svg{
+    fill:rgb(138, 207, 9);
+}
+.card .icons label:nth-of-type(5) :checked + span svg{
+    fill:lime;
+}
+
+.card .icons + p {
+    color:#110C22;
+    font-size: 17px;
+    font-weight: bold;
+    width:374px;
+}
+.card textarea {
+    resize: none;
+    outline:none;
+    border-radius:5px;
+    border:1px solid #3B70FF;
+    padding:20px;
+    width:403px;
+    height: 100px;
+    
+}
+.card textarea::placeholder {
+    color:#110C22;
+    font-size: 16px;
+}
+.card textarea + p {
+    font-size: 18px;
+    font-weight: bold;
+    width:403px;
+}
+.card .check {
+    width:50%;
+    height:40px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom:30px;
+    user-select: none;
+}
+.card .check label:nth-of-type(1) {
+    margin-right:60px;
+}
+.card .check label {
+    margin-left:5px;
+}
+.card .check input {
+    width:27px;
+    height:27px;
+}
+.card .btn {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.card .btn a {
+    width:195px;
+    height:65px;
+    background-color: #3B70FF;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px;
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    border:1px solid #A9B2CA;
+
+}
+.card .btn a:hover {
+    opacity:0.8;
+}
+.card .btn a:nth-of-type(2) {
+    background-color: #fff;
+    color: #717B94;
+
+}
+button {
+    width:200px;
+    height:50px;
+    color:white;
+    background-color: #3B70FF;
+    border:0;
+    border-radius: 5px;
+    font-size: 21px;
+    cursor:pointer;
+    box-shadow: 0 0 4px 1px rgba(0,0,0,0.5);
+}
