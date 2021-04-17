@@ -11,8 +11,7 @@
 
 
 <h3>day_1217.sketch</h3>
-<img src="" alt="day_1205.sketch"/>
-
+<img src="https://user-images.githubusercontent.com/58973431/115120560-c2714700-9fb6-11eb-8b17-516292fc6354.png" alt="day_1205.sketch"/>
 
 <h3>day_1250.sketch</h3>
 <img src="" alt="day_1205.sketch"/>
