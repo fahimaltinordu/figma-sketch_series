@@ -17,3 +17,6 @@
 <hr>
 <h3>day_1265.sketch</h3>
 <img src="https://user-images.githubusercontent.com/58973431/115121570-1894b900-9fbc-11eb-8a31-4fc457f53a34.png" alt="day_1205.sketch"/>
+<hr>
+<h3>day_1295.sketch</h3>
+<img src="https://user-images.githubusercontent.com/58973431/115885373-94798000-a458-11eb-8d1e-392a37ec9843.png" alt="day_1295.sketch"/>
